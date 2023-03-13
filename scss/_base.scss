@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    outline: none;
+  }
+
+body {
+  font-family:$font-family--Montserrat;
+  margin: 0 auto;
+  background-color:#F0F0F0;
+}
+  
+h1,h2,h3,h4,h5 {
+  margin: 0;
+}
+  
+ul,
+li {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+fieldset {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+input,
+textarea,
+fieldset {
+  border: none;
+}
+
+textarea {
+  resize : none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+
+@media (min-width: $screen-table) {
+  .title-h2 {
+    font-size: 60px;
+    line-height: 76px;
+  }
+}
+
+.title-text-h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #303344;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background: #FD8342;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+
+  box-shadow: 1px 6px 20px rgba(240, 10, 10, 0.2);
+  border-radius: 50px;
+  transition-duration: .5s;
+  &:hover,
+  &:focus {
+    background: #FFFFFF;
+    color: #FD8342;
+    border: 1px solid #FD8342;
+    box-shadow: 1px 6px 20px rgba(240, 10, 10, 0.2);
+  }
+  &:active {
+    background: #FD8342;
+    border: none;
+    color: #FFF;
+  }
+  &--w-348 {
+    max-width:348px;
+    width: 100%;
+
+  }
+}
+
+.btn-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FD8342;;
+  border: 1px solid #FD8342;
+  box-shadow: 1px 6px 20px rgba(240, 10, 10, 0.2);
+  border-radius: 50px;
+  transition-duration: .5s;
+  &:hover,
+  &:focus {
+    background: #FD8342;
+    border: none;
+    color: #FFF;
+  }
+  &:active {
+    background: #FFFFFF;
+    color: #FD8342;
+    border: 1px solid #FD8342;
+
+  }
+  &--w-348 {
+    max-width:348px;
+    width: 100%;
+  }
+  &--w-272 {
+    max-width:272px;
+    width: 100%;
+  }
+
+}
+
+
+
+@media (min-width: $screen-table) {
+}
+
+  
+@media (min-width: $screen-desktop) {
+
+}
+  

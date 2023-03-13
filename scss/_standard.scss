@@ -1,0 +1,71 @@
+.bg-5D9BD4{
+    background-color: #5D9BD4;
+}
+.bg-E4548E{
+    background-color: #E4548E;
+}
+.bg-8AC8A2{
+    background-color: #8AC8A2;
+}
+.mt-81 {
+    margin-top: 81px;
+}
+.mb-57 {
+    margin-bottom: 57px;
+}
+.h-215 {
+    height: 215px;
+}
+
+.btn-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 273px;
+    height: 66px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.number-3 {
+    position: relative;
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 356px;
+        right: 54px;
+
+        display: block;
+        width: 361px;
+        height: 430px;
+        background-image: url("./images/number-3.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+}
+
+.card-animate {
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.card-animate:hover {
+    -webkit-transform: translateY(calc(-1.5rem / 5));
+    transform: translateY(calc(-1.5rem / 5));
+    -webkit-box-shadow: 0 5px 10px rgba(30,32,37,.12);
+    box-shadow: 0 5px 10px rgba(30,32,37,.12);
+}
+
+.btn-hover {
+    transition: all .4s;
+}
+.btn-hover:hover {
+    opacity: .7;
+}

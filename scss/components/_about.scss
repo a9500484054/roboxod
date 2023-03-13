@@ -1,0 +1,190 @@
+.about {
+    background-color: hsl(0, 0%, 100%);
+    padding-top: 44px;
+    padding-bottom: 39px;
+    &__wrap-1 {
+        max-width: 544px;
+    }
+    &__wrap-2 {
+        display: none;
+        max-width: 314px;
+        margin: 0 auto;
+        &-img {
+            text-align: center;
+            margin-bottom: 23px;
+        }
+        &-title {
+            margin-bottom: 2px;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            /* identical to box height */
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #1E1E1E;
+        }
+        &-text-1 {
+            margin-bottom: 13px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #7C7C7C;
+        }
+        &-text-2 {
+            position: relative;
+            font-family: 'Montserrat';
+            font-style: italic;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 148.9%;
+            /* or 27px */
+            color: #1E1E1E;
+            &::after {
+                content: "";
+
+                position: absolute;
+                top: -12px;
+                left: -66px;
+
+                display: block;
+                width: 50px;
+                height: 38px;
+
+                background-image: url("./images/qr.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            &::before {
+                content: "";
+
+                position: absolute;
+                bottom: -18px;
+                right: -41px;
+
+                display: block;
+                width: 50px;
+                height: 38px;
+
+                background-image: url("./images/ql.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 13px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    &__item-title {
+        margin-bottom: 17px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        color: #7C7C7C;
+    }
+    &__item-text {
+        margin-bottom: 14px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        
+        color: #1E1E1E;
+    }
+    &__list {
+        margin-bottom: 17px;
+    }
+    &__item {
+        margin-bottom: 7px;
+        position: relative;
+        padding-left: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        color: #000000;
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: 2px;
+            left: 3px;
+
+            display: block;
+            width: 15px;
+            height: 15px;
+
+            background: #fff;
+        }
+        &:nth-child(1) {
+            &::after {
+                background: #5D9BD4;
+            }
+        }
+        &:nth-child(2) {
+            &::after {
+                background: #8ADA9D;
+            }
+        }
+        &:nth-child(3) {
+            &::after {
+                background: #F4C947;
+            }
+        }
+        &:nth-child(4) {
+            &::after {
+                background: #F5749A;
+            }
+        }
+    }
+    &__img {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: $screen-table) {
+
+}
+
+@media (min-width: $screen-desktop) {
+    .about {
+        padding-top: 60px;
+        &__wrap-2 {
+            display: block;
+            margin-top: 50px;
+        }
+        &__title {
+            margin-bottom: 50px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+
+            color: #000000;
+        }
+        &__item-title {
+            margin-bottom: 20px;
+        }
+        &__item-text {
+            margin-bottom: 33px;
+        }
+        &__list {
+            margin-bottom: 50px;
+        }
+    }
+}

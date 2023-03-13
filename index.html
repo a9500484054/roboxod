@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Робоход</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">   
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="css/um-icon-style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="hero__header-logo bg-cirgle">
+                <img src="./images/logo-main.svg" alt="">
+            </a>
+            <div class="menu">
+                <button  type="button" class="menu__btn-close" >
+                    <i class="icon-close"></i>
+                </button>   
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section1">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section2">Преподаватели</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section3">Цены</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section4">Отзывы</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section5">Расписание</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section6">Контакты</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section7">Блог</a></li>
+                </ul>
+                <div class="menu__adrees">
+                    <a href="tel:+79111825503">+7 (911) 182-55-03</a>
+                    <div>ПН-ПТ 10:00-22:00</div>
+                </div>
+            </div>
+            <button type="button" class="menu-burger color-green d-flex flex-column justify-content-center align-items-center">
+                <span></span>
+                <span class="my-1"></span>
+                <span></span>
+            </button>
+            <div class="header__adrees">
+                <a href="tel:+79111825503">+7 (911) 182-55-03</a>
+                <div>ПН-ПТ 10:00-22:00</div>
+            </div>
+        </div>
+    </header>
+
+   <main>
+    <section class="hero" >
+        <div class="container">
+            <h1 class="hero__title">УРОКИ РОБОТОТЕХНИКИ</h1>
+            <div class="hero__text-1">в центре Санкт-Петербурга</div>
+            <div class="hero__text-2">Курсы для детей 5-17 лет по разработке, конструированию, прототипированию и программированию роботов</div>
+            <button type="button" class="hero__btn btn-hover">Записаться на пробное занятие</button>
+        </div>
+    </section>
+
+    <section class="advantages" >
+        <div class="container">
+            <h2 class="advantages__title">Чем полезны уроки робототехники</h2>
+            <div class="advantages__text">Наши ученики всестороннее развиваются и приобретают способность открыто мыслить</div>
+
+            <div class="advantages__wrapp">
+
+                <div class="advantages__card card-animate">
+                    <h3 class="advantages__card-title">УЧЕНИК развивает в себе:</h3>
+                    <div class="advantages__card-wrap">
+                        <ul class="advantages__card-list">
+                            <li class="advantages__card-item">Ответственность</li>
+                            <li class="advantages__card-item">Дисциплину</li>
+                            <li class="advantages__card-item">Творческое мышление</li>
+                            <li class="advantages__card-item">Воображение</li>
+                            <li class="advantages__card-item">Речь и умственные способности</li>
+                            <li class="advantages__card-item">Внимательность</li>
+                        </ul>
+                        <ul>        
+                            <li class="advantages__card-item">Терпеливость</li>
+                            <li class="advantages__card-item">Целеустремленность</li>
+                            <li class="advantages__card-item">Усидчивость</li>
+                            <li class="advantages__card-item">Память</li>
+                            <li class="advantages__card-item">Мелкую моторику рук</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="advantages__card card-animate">
+                    <h3 class="advantages__card-title">Обучается важным навыкам:</h3>
+                    <ul class="advantages__card-list number-3">
+                        <li class="advantages__card-item">Работать в команде</li>
+                        <li class="advantages__card-item">Поэтапно действовать от простого к сложному</li>
+                        <li class="advantages__card-item">Самостоятельно принимать решения</li>
+                        <li class="advantages__card-item">Уважать чужой труд</li>
+                        <li class="advantages__card-item">Доводить начатое дело до логического завершения</li>
+                        <li class="advantages__card-item">Эффективно общаться с педагогами и сверстниками</li>
+                    </ul>
+                </div>
+
+                <div class="advantages__card card-animate">
+                    <h3 class="advantages__card-title">Получает современные знания:</h3>
+                    <ul class="advantages__card-list">
+                        <li class="advantages__card-item">Азы компьютерной грамотности</li>
+                        <li class="advantages__card-item">Основы математики и физики</li>
+                        <li class="advantages__card-item">Программирование и логика</li>
+                        <li class="advantages__card-item">Проектирование и конструирование</li>
+                        <li class="advantages__card-item">Многообразие окружающего мира</li>
+                        <li class="advantages__card-item">Работа с механизмами</li>
+                        <li class="advantages__card-item">Английский язык</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="#section1">
+        <div class="container">
+            <div class="d-lg-flex">
+                <div class="about__wrap-1">
+                    <h3 class="about__title">О нас</h3>
+                    <div class="about__item-title">Наша миссия</div>
+                    <div class="about__item-text mb-lg-5">Объединить людей и создать условия для подготовки к жизни в завтрашнем дне.</div>
+                    <div class="about__item-title">Наша цель</div>
+                    <div class="about__item-text">Наша цель показать ученикам робота с разных сторон разработки.</div>
+                    <div class="about__item-text">При поддержке специалистов по робототехнике из ведущих учебных заведений Санкт-Петербурга* мы разработали и скорректировали актуальную образовательную программу.</div>
+                    <div class="about__item-text">Она включает в себя 4 основных направления в изучении робототехники:</div>
+                    <ul class="about__list">
+                        <li class="about__item">математика (расчеты);</li>
+                        <li class="about__item">программирование (языки программирования);</li>
+                        <li class="about__item">конструирование (аппаратная часть);</li>
+                        <li class="about__item">применение (полезная нагрузка-что и для чего делает робот). </li>
+                    </ul>
+                </div>
+                <div  class="about__wrap-2">
+                    <div class="about__wrap-2-img">
+                        <img src="./images/img-ticher-aleksei.png" alt="">
+                    </div>
+                    <div class="about__wrap-2-title">Холмогоров Алексей</div>
+                    <div class="about__wrap-2-text-1">преподаватель</div>
+                    <div class="about__wrap-2-text-2">Математика должна работать не с абстрактными цифрами, а существовать в реальном мире, где мы с вами живем.</div>
+                </div>
+            </div>
+            <div class="about__item-text">
+                Мы показываем детям насколько неотъемлемо связаны эти направления. Ведь именно им предстоит использовать и развивать современные подходы в науке.
+            </div>
+            <div class="about__img"> 
+                <picture>
+                    <source srcset="./images/logo-dest.png" media="(min-width: 768px)">
+                    <img class="" src="./images/logo.png" alt="фото"/>
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section class="teachers" id="#section2">
+        <div class="container">
+            <h2 class="teachers__title">Наши преподаватели</h2>
+            <div class="teachers__wrap row gy-4 justify-content-between">
+                <div class="col-lg-6 d-flex teachers__card p-0 card-animate">
+                    <picture>
+                        <source srcset="./images/foto-1-dest.png" media="(min-width: 768px)">
+                        <img class="" src="./images/foto-1-mob.png" alt="фото"/>
+                    </picture>
+                    <div class="px-2 pt-2 px-lg-3 pt-lg-3">
+                        <h3 class="teachers__card-title mb-2">Холмогоров Алексей</h3>
+                        <div class="teachers__card-text">
+                            <p>Закончил СПбГЭТУ «ЛЭТИ», факультет радиотехники и телекоммуникаций.</p> 
+                            <p>
+                                “В школьные годы я начал заниматься радиотехникой во дворце творчества детей и молодёжи, там я познакомился с основами схемотехники, спаял свой первый радиоприемник и выучил азбуку Морзе. В данный момент я являюсь наставником для учеников «Семейной школы робототехники РОБОТОХОД»”.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex teachers__card p-0 card-animate">
+                    <picture>
+                        <source srcset="./images/foto-2-dest.png" media="(min-width: 768px)">
+                        <img class="" src="./images/foto-2-mob.png" alt="фото"/>
+                    </picture>
+                    <div class="px-2 pt-2 px-lg-3 pt-lg-3">
+                        <h3 class="teachers__card-title mb-2">Гордейко Анна</h3>
+                        <div class="teachers__card-text">
+                            <p>
+                                Закончила СПбГУТ им. проф. М.А. Бонч-Бруевича. Специализация: «Конструирование и производство радиоэлектронных средств» (Бакалавр) и «Информационные технологии в дизайне» (Магистр).
+                            </p>
+                            <p>
+                                Опыт преподавания по предметам технической направленности — более трех лет. Преподавала в Международной школе программирования и математики «Алгоритмика», а также в детском технопарке «Кванториум». 
+                            </p>
+
+                            <p>
+                                Параллельно занимаюсь проектированием пользовательских веб-интерфейсов для сайтов и веб-приложений.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="robots">
+        <div class="container">
+            <h2 class="">Добро пожаловать в мир роботов:</h2>
+            <div class="robots__text">узнайте о нашей школе робототехники!</div>
+            <div class="text-center">
+                <img src="./images/video.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="price" id="#section3">
+        <div class="container">
+            <h2>Цены</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item bg-5D9BD4">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed bg-5D9BD4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Групповое занятие
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Дети в небольших группах до 10 человек работают в команде и учатся взаимодействовать.</p>
+
+                        <div class="d-flex align-items-center justify-content-center opacity-50 mb-3">
+                            <div class="price__elem1">1 занятие (пробное)</div>
+                            <div class="price__elem2">= 1000 ₽</div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center mb-5">
+                            <div class="price__elem1">4 занятие в месяц</div>
+                            <div class="price__elem2">= 3000 ₽</div>
+                        </div>
+
+                        <div>
+                            <button type="button" class="accordion-item__btn">Записаться</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-E4548E">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed bg-E4548E" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Индивидуальное занятие
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Ребёнок вместе с педагогом изучает технические дисциплины и погружается в удивительный мир роботостроения.</p>
+
+                        <div class="d-flex align-items-center justify-content-center opacity-50 mb-3">
+                            <div class="price__elem1">1 занятие (пробное)</div>
+                            <div class="price__elem2">= 1500 ₽</div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center mb-5">
+                            <div class="price__elem1">4 занятие в месяц</div>
+                            <div class="price__elem2">= 6000 ₽</div>
+                        </div>
+
+                        <div>
+                            <button type="button" class="accordion-item__btn">Записаться</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-8AC8A2">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed bg-8AC8A2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Подготовка к соревнованиям
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>На занятиях ребёнок получает исчерпывающие знания и навыки, чтобы разобраться в нюансах и стать чемпионом.</p>
+
+                        <div class="d-flex align-items-center justify-content-center mb-5">
+                            <div class="price__elem2">От 1 500 ₽</div>
+                        </div>
+
+                        <div>
+                            <button type="button" class="accordion-item__btn btn-hover">Записаться</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="price__accordion-dest row">
+                <div class="col-4">
+                    <div class="bg-5D9BD4 price__card">
+                        <div class="price__card-img">
+                            <img src="./images/icon-price-3.png" alt="">
+                        </div>
+                        <h3 class="text-center mt-4 mb-4">Групповое занятие</h3>
+                        <p class="text-center px-5">Дети в небольших группах до 10 человек работают в команде и учатся взаимодействовать.</p>
+
+                        <div class="d-flex align-items-center  justify-content-center opacity-50 mb-3">
+                            <div class="price__elem1">1 занятие (пробное)</div>
+                            <div class="price__elem2">= 1500 ₽</div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center mb-5">
+                            <div class="price__elem1">4 занятие в месяц</div>
+                            <div class="price__elem2">= 6000 ₽</div>
+                        </div>
+
+                        <div>
+                            <button type="button" class="accordion-item__btn btn-hover">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bg-E4548E price__card">
+                        <div class="price__card-img">
+                            <img src="./images/icon-price-1.png" alt="">
+                        </div>
+                        <h3 class="text-center mt-4 mb-4">Индивидуальное занятие</h3>
+                        <p class="text-center px-5">Ребёнок вместе с педагогом изучает технические дисциплины и погружается в удивительный мир роботостроения.</p>
+
+                        <div class="d-flex align-items-center  justify-content-center opacity-50 mb-3">
+                            <div class="price__elem1">1 занятие (пробное)</div>
+                            <div class="price__elem2">= 1500 ₽</div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center mb-5">
+                            <div class="price__elem1">4 занятие в месяц</div>
+                            <div class="price__elem2">= 6000 ₽</div>
+                        </div>
+
+                        <div>
+                            <button type="button" class="accordion-item__btn btn-hover">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bg-8AC8A2 price__card">
+                        <div class="price__card-img">
+                            <img src="./images/icon-price-2.png" alt="">
+                        </div>
+                        <h3 class="text-center mt-4 mb-4">Подготовка к соревнованиям</h3>
+                        <p class="text-center px-5">На занятиях ребёнок получает исчерпывающие знания и навыки, чтобы разобраться в нюансах и стать чемпионом.</p>
+
+                        <div class="d-flex align-items-center justify-content-center mb-5 mt-81">
+                            <div class="price__elem2">От 1 500 ₽</div>
+                        </div>
+
+                        <div>
+                            <button type="button" class="accordion-item__btn btn-hover">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="#section4">
+        <div class="container">
+            <h2>Что говорят наши ученики</h2>
+            <div class="reviews__slider swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="reviews__item card-animate">
+                            <div class="">
+                                <div>
+                                    <img src="./images/reviews-1.png" alt="">
+                                </div>
+                                <div class="reviews__item-wrap">
+                                    <h3 class="card__text-1 text-start">Я знаю точно, что когда вырасту, машины будут летать! А я создам машиновертолет</h3>
+                                    <p class="card__text-2">Владимир, 6 лет</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="reviews__item card-animate">
+                            <div class="">
+                                <div>
+                                    <img src="./images/reviews-2.png" alt="">
+                                </div>
+                                <div class="reviews__item-wrap">
+                                    <h3 class="card__text-1 text-start">Сегодня мы со львенком создали робота, который спасет нас от землетрясения.</h3>
+                                    <p class="card__text-2">Лев, 7 лет</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__item card-animate">
+                            <div class="">
+                                <div>
+                                    <img src="./images/reviews-3.png" alt="">
+                                </div>
+                                <div class="reviews__item-wrap">
+                                    <h3 class="card__text-1 text-start">Больше всего на свете я люблю парк аттракционов и так жаль, что они совсем не работают зимой. А что Я могу сделать, чтобы они все таки работали?</h3>
+                                    <p class="card__text-2">Рома, 8 лет</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__item card-animate">
+                            <div class="">
+                                <div>
+                                    <img src="./images/reviews-4.png" alt="">
+                                </div>
+                                <div class="reviews__item-wrap">
+                                    <h3 class="card__text-1 text-start">Теперь мои растения не засохнут. Их будет поливать робот.</h3>
+                                    <p class="card__text-2">Тема, 4 года</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination advantages__pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule" id="#section5">
+        <div class="container">
+
+            <h2>Расписание</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="schedule__list mb-md-5">
+                        <li class="schedule__item-title">Понедельник:</li>
+                        <li class="schedule__item-text"><span>15:10-16:40</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>16:50-18:20</span> - 8 и 9 классы</li>
+                    </ul>
+                    <ul class="schedule__list">
+                        <li class="schedule__item-title">Четверг:</li>
+                        <li class="schedule__item-text"><span>15:10-16:40</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>16:50-18:20</span>- 10 и 11 классы</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="schedule__list mb-md-5">
+                        <li class="schedule__item-title">Пятница:</li>
+                        <li class="schedule__item-text"><span>15:10-16:40</span> - 5 и 6 классы <span class="badge text-bg-dark">ведется набор</span></li>
+                        <li class="schedule__item-text"><span>16:50-18:20</span> - 7 и 8 классы <span class="badge text-bg-dark">ведется набор</span></li>
+                    </ul>
+                    <ul class="schedule__list">
+                        <li class="schedule__item-title">Суббота:</li>
+                        <li class="schedule__item-text"><span>12:00-13:30</span> - дети 4-6 лет</li>
+                        <li class="schedule__item-text"><span>13:40-15:10</span> - индивидуальные занятия</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="#section6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Контакты</h2>
+                    <ul class="contact__list-1">
+                        <li>
+                            <a href="tel:+79111825503">+7 (911) 182-55-03</a>
+                        </li>
+                        <li>
+                            <span>Санкт-Петербург, ул. Маяковского 37В</span>
+                        </li>
+                        <li>
+                            <span>Ежедневно с 10.00 до 19.00</span>
+                        </li>
+                    </ul>
+                    <ul class="contact__list-2">
+                        <li>
+                            <a href="https://vk.com/robotohod">
+                                <img src="./images/vk.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/reel/CoQG4njooWn/?igshid=MDJmNzVkMjY=">
+                                <img src="./images/inst.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=D5Mx4vKE12M&ab_channel=%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%D0%A0%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B8">
+                                <img src="./images/youtube.png" alt="">
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://robotohod.com/">
+                                <img src="./images/robo.png" alt="">
+
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-center mb-5">
+                        <button type="button" class="contact__btn btn-hover btn-hover">Обратный звонок</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_mayakovskogo_37v/Z0kYdQJmTUUHQFtjfXV1cHtqbQ==/?ll=30.356400%2C59.941799&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Маяковского, 37В — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.356400%2C59.941799&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjIyNDc1MTI5ElTQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDRg9C70LjRhtCwINCc0LDRj9C60L7QstGB0LrQvtCz0L4sIDM30JIiCg3m2fJBFWjEb0I%2C&z=17" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <section class="social" >
+        <div class="container">
+            <div class="social__header">
+                <h2>Развивайтесь с нами в социальных сетях</h2>
+                <ul class="social__list">
+                    <li>
+                        <a href="#">
+                            <img src="./images/vk.png" alt="">
+                        </a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="#">
+                            <img src="./images/inst.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/youtube.png" alt="">
+                            
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social__slider swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="social__item p-3 p-md-5 bg-white">
+                            <p>Знаете, чего так ждут и любят ученики нашей семейной школы «РОБОТОХОД»? Это творческие уроки со свободной темой! это всегда свобода и невероятный поток фантазии! Посмотрите наш видео-отчет и попробуйте предположить, что же изобрели наши юные гении Хотите вступить в наш клуб?</p>
+                            <div class="mb-3">
+                                <a href="#" >показать еще</a>
+                            </div>
+                            <div>
+                                <img src="./images/play.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="social__item p-3 p-md-5 bg-white">
+                            <p>Сегодня в нашей семейной школе робототехники Роботоходсостоялось первое индивидуальное занятие с преподавателем Алексеем ‍ По теме: землетрясение Составили робота, который смог бы компенсировать подземные толчки! Глобально материал очень сложный и многогранный.</p>
+                            <div class="mb-3">
+                                <a href="#" >показать еще</a>
+                            </div>
+                            <div>
+                                <img src="./images/play.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="swiper-pagination advantages__pagination"></div>
+            </div>
+            <div>
+                <a href="https://vk.com/robotohod" class="social__btn btn-hover">Подписаться<img class="ms-2" src="./images/vk-black.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="buy">
+        
+        <div class="container">
+            <h2>покупка образовательных наборов</h2>
+            <div class="buy__slider swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        
+                            <div class="bg-5D9BD4 price__card">
+                                <div class="price__card-img h-215 bg-white">
+                                    <img src="./images/buy-1.png" alt="">
+                                </div>
+                                <h3 class="text-center mt-4 mb-4">Lego WeDo</h3>
+                                <p class="text-center px-5">для юных гениев, которым важно познание Мира через пальчики. Яркое, интересное, поддерживающее импровизации ребенка.</p>
+            
+                                <div class="d-flex align-items-center justify-content-center mb-5">
+                                    <div class="price__elem2">Цена по запросу</div>
+                                </div>
+            
+                                <div>
+                                    <button type="button" class="btn-white btn-hover">Купить</button>
+                                </div>
+                            </div>
+                        
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="bg-E4548E price__card">
+                            <div class="price__card-img h-215 bg-white">
+                                <img src="./images/buy-2.png" alt="">
+                            </div>
+                            <h3 class="text-center mt-4 mb-4">Lego Mindstorms Education</h3>
+                            <p class="text-center px-5">для школьников, которым важно движение, открытие секретов науки через создание программирование робота. Школьник с нами начинает мыслить творчески.</p>
+        
+                            <div class="d-flex align-items-center justify-content-center mb-5">
+                                <div class="price__elem2">Цена по запросу</div>
+                            </div>
+        
+                            <div>
+                                <button type="button" class="btn-white btn-hover">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-8AC8A2 price__card ">
+                            <div class="price__card-img h-215 bg-white">
+                                <img src="./images/buy-3.png" alt="">
+                            </div>
+                            <h3 class="text-center mt-4 mb-4">Технолидер-1</h3>
+                            <p class="text-center px-5">для гениев, которым нужен индивидуальный подход.</p>
+        
+                            <div class="d-flex align-items-center justify-content-center mb-5">
+                                <div class="price__elem2">Цена по запросу</div>
+                            </div>
+        
+                            <div>
+                                <button type="button" class="btn-white btn-hover">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="swiper-pagination advantages__pagination"></div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+    <section class="modal modal-kittens z99999">
+            <button class="modal__close">
+                <i class="icon-close"></i>
+            </button>
+            <div class="text-left mb-32 mb-t-60">
+                <h2 class="title-h2">Группа «Котята»</h2>
+                <p class="modal__text">Возраст ребенка 2 – 3,5 лет</p>
+            </div>
+            <p class="modal__text">
+                Для самых маленьких мы приготовили безопасную и разнообразную среду для познания и исследования. 
+
+            </p>
+            <p class="modal__text">
+                В этом возрасте происходит становление личности ребёнка. Дети учатся общению и взаимодействию со сверстниками и взрослыми, учатся выполнять просьбы взрослых и переходят к самостоятельной деятельности. Это возраст самоутверждения малыша, как личности. В этом возрасте проявляются его характер, интересы, таланты. Огромную часть в жизни ребёнка этого возраста занимает игра. Мы выстраиваем занятия в виде игры с использованием пальчиковых игр, логоритмических упражнений. Они развивают мелкую моторку, оказывают благотворное влияние на развитие выразительной речи, звукопроизношения и автоматизацию звуков.
+
+            </p>
+            <p class="modal__text">
+                Воспитатели создают добрую и благоприятную атмосферу, в которой каждому малышу легко адаптироваться. Прогулки включают в себя исследовательскую и творческую деятельность.
+            </p>
+    </section>
+
+    <section class="modal modal-at-scientist z99999">
+        <button class="modal__close">
+            <i class="icon-close"></i>
+        </button>
+        <div class="text-left mb-32 mb-t-60">
+            <h2 class="title-h2">Группа «Кот учёный» </h2>
+            <p class="modal__text">Возраст ребенка 4 – 6 лет</p>
+        </div>
+        <p class="modal__text">
+            В средней группе у ребят начинается проектная деятельность. Дети осваивают навыки самостоятельности, чувствования и понимания себя. Период активного роста. Дети усваивают много нового, поэтому разноплановые занятия крайне полезны для развития формирующейся личности. Систематические развивающие занятия совершенствуют психические процессы: память, мышление, восприятие, воображение, и мир. Большое внимание уделяется свободной игре, ведь игра позволяет детям максимально раскрыться. Обязательные прогулки и мини походы.
+        </p>
+    </section>
+
+    <section class="modal modal-fb z99999">
+        <button class="modal__close">
+            <i class="icon-close"></i>
+        </button>
+        <div class="text-center mb-32 mb-t-60">
+            <div class=" modal-fb__wrap">
+                <h2 class="title-h2">Оставить заявку</h2>
+                <p class="modal__text">Введите свои данные и мы Вам перзвоним</p>
+            </div>
+            <form action="#" class="modal-fb__form">
+                <input class="modal-fb__input" type="text" placeholder="Ваше имя">
+                <input class="modal-fb__input" type="text" placeholder="Ваш телефон">
+                <button type="submit" class="modal-fb__btn btn btn-hover">Отправить</button>
+                <label  class="modal-fb__label" for="#">
+                    <input class="modal-fb__checkbox" type="checkbox" >
+                    <span class="modal-fb__checkbox-elem"></span>
+                    <div class="modal-fb__checkbox-text">
+                        Оставляя свои контакнтые данные, Вы соглашаетесь с
+                        <a href="#">политикой конфиденциальности.</a>
+                    </div>
+                </label>
+            </form>
+        </div>
+        
+    </section>
+
+    <section class="modal modal-gs z99999">
+        <button class="modal__close">
+            <i class="icon-close"></i>
+        </button>
+        <div class="text-center">
+            <h2 class="title-h2">Спасибо за Вашу заявку!</h2>
+            <p class="modal__text">Мы Вам перезвоним в течении 30 минут</p>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <div class="text-center">
+                    <img src="./images/logo-footer.png" alt="">
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#section1">О нас</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section2">Преподаватели</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section3">Цены</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section4">Отзывы</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section5">Расписание</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section6">Контакты</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section7">Блог</a></li>
+                </ul>
+                <div class="mb-57">
+                    <button class="btn-hover">Пробное занятие</button>
+                </div>
+            </div>
+            <ul class="footer__list-2 d-md-flex justify-content-center">
+                <li class="footer__item-2 me-md-5">
+                    <a href="#">Политика конфиденциальности</a>
+                </li>
+                <li class="footer__item-2">
+                    © 2023 Роботоход
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+
+    </script>
+
+</body>
+</html>
