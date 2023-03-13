@@ -392,77 +392,6 @@ input[type=radio].visually-hidden {
     line-height: 76px;
   }
 }
-.title-text-h2 {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  color: #303344;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
-  background: #FD8342;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-  box-shadow: 1px 6px 20px rgba(240, 10, 10, 0.2);
-  border-radius: 50px;
-  transition-duration: 0.5s;
-}
-.btn:hover, .btn:focus {
-  background: #FFFFFF;
-  color: #FD8342;
-  border: 1px solid #FD8342;
-  box-shadow: 1px 6px 20px rgba(240, 10, 10, 0.2);
-}
-.btn:active {
-  background: #FD8342;
-  border: none;
-  color: #FFF;
-}
-.btn--w-348 {
-  max-width: 348px;
-  width: 100%;
-}
-
-.btn-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
-  background: #FFFFFF;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FD8342;
-  border: 1px solid #FD8342;
-  box-shadow: 1px 6px 20px rgba(240, 10, 10, 0.2);
-  border-radius: 50px;
-  transition-duration: 0.5s;
-}
-.btn-2:hover, .btn-2:focus {
-  background: #FD8342;
-  border: none;
-  color: #FFF;
-}
-.btn-2:active {
-  background: #FFFFFF;
-  color: #FD8342;
-  border: 1px solid #FD8342;
-}
-.btn-2--w-348 {
-  max-width: 348px;
-  width: 100%;
-}
-.btn-2--w-272 {
-  max-width: 272px;
-  width: 100%;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -1796,4 +1725,63 @@ input[type=radio].visually-hidden {
 
 .btn-hover:hover {
   opacity: 0.7;
+}
+
+.z999 {
+  z-index: 999999999999999;
+}
+
+.modal-fb {
+  background: #3C3C3C;
+  justify-content: center;
+  align-items: center;
+}
+.modal-fb select {
+  padding: 21px 14px;
+  margin-bottom: 20px;
+  background: #ACE063;
+  border-radius: 20px;
+}
+.modal-fb h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.modal-fb input {
+  padding: 21px 14px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+.modal-fb .btn-primary {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #69D4D5 0%, #ACE063 100%);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  /* identical to box height */
+  color: #3C3C3C;
+}
+.modal-fb .btn-light {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #FFFFFF;
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */

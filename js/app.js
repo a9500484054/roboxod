@@ -8,6 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.menu').classList.remove('menu--active');
     });
 
+    document.addEventListener('click', (event) => {
+        if(event.target.matches('.btn-js')) {
+            console.log('myModal');
+            openModal('#myModal');
+        }
+    });
+
     const swiper1 = new Swiper('.reviews__slider', {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -77,5 +84,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+async function closeModal(selector) {
+    let myModalEl = document.querySelector(selector);
+    let modal = bootstrap.Modal.getOrCreateInstance(myModalEl);
+    modal.hide();
+}
+async function openModal(selector) {
+    let myModalEl = document.querySelector(selector);
+    let modal = bootstrap.Modal.getOrCreateInstance(myModalEl);
+    modal.show();
+}
 
