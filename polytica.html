@@ -20,22 +20,14 @@
     
     <header class="header">
         <div class="container d-flex justify-content-between align-items-center">
-            <a href="#" class="hero__header-logo bg-cirgle">
+            <a href="index.html" class="hero__header-logo bg-cirgle">
                 <img src="./images/logo-main.svg" alt="">
             </a>
             <div class="menu">
                 <button  type="button" class="menu__btn-close" >
                     <i class="icon-close"></i>
                 </button>   
-                <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section1">О нас</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section2">Преподаватели</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section3">Цены</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section4">Отзывы</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section5">Расписание</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section6">Контакты</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section7">Блог</a></li>
-                </ul>
+
                 <div class="menu__adrees">
                     <a href="tel:+79111825503">+7 (911) 182-55-03</a>
                     <div>ПН-ПТ 10:00-22:00</div>
@@ -53,7 +45,7 @@
         </div>
     </header>
 
-   <main>
+   <main class="container polytica">
     <h1>Политика конфиденциальности</h1>
     <h2>1. Общие положения</h2>
     <p>Настоящая политика обработки персональных данных составлена в
@@ -265,22 +257,60 @@
         договора, стороной которого является субъект персональных данных.</p>
    </main>
 
+   <div id="myModal" class="modal fade z999" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content modal-fb ">
+            <div class="w-25">
+                <h3>ЗАПИСЬ НА Пробный УРОК</h3>
+                <form action="">
+                    <!-- Basic Input -->
+                    <select class="form-select" aria-label="Пример выбора по умолчанию">
+                        <option selected>Выбрать адрес</option>
+                        <option value="1">Санкт-Петербург, ул. Маяковского 37В</option>
+                        <option value="2">Санкт-Петербург, ул. Маяковского 37В</option>
+                    </select>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Ваше имя">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Номер телефона">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#myModal-2" >Отправить заявку</button>
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Отмена</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="myModal-2" class="modal fade z999" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content modal-fb ">
+            <div class="w-100 p-2 d-flex justify-content-end">
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="text-white h1 p-5 text-center">
+                Спасибо заявка отправлена
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
     <footer class="footer">
         <div class="container">
             <div class="d-md-flex justify-content-between align-items-center">
                 <div class="text-center">
-                    <img src="./images/logo-footer.png" alt="">
+                    <a href="index.html">
+                        <img src="./images/logo-footer.png" alt="">
+                    </a>
                 </div>
-                <ul class="footer__list">
-                    <li class="footer__item"><a class="footer__link" href="#section1">О нас</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section2">Преподаватели</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section3">Цены</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section4">Отзывы</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section5">Расписание</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section6">Контакты</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section7">Блог</a></li>
-                </ul>
+               
                 <div class="mb-57">
                     <button class="btn-hover btn-js">Пробное занятие</button>
                 </div>

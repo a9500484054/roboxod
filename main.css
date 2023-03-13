@@ -1784,4 +1784,14 @@ input[type=radio].visually-hidden {
   /* identical to box height */
   color: #FFFFFF;
   border-radius: 20px;
+}
+
+.polytica {
+  padding-top: 100px;
+}
+.polytica h1 {
+  margin-bottom: 50px;
+}
+.polytica h2 {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
