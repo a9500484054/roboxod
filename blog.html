@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Робоход</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">   
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="css/um-icon-style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="hero__header-logo bg-cirgle">
+                <img class="w-100" src="./images/logo-main.svg" alt="">
+            </a>
+            <div class="menu">
+                <button  type="button" class="menu__btn-close" >
+                    <i class="icon-close"></i>
+                </button>   
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section1">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section2">Преподаватели</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section3">Цены</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section4">Отзывы</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section5">Расписание</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section6">Контакты</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section7">Блог</a></li>
+                </ul>
+                <div class="menu__adrees">
+                    <a href="tel:+79111825503">+7 (911) 182-55-03</a>
+                    <div>ПН-ПТ 10:00-22:00</div>
+                </div>
+            </div>
+            <button type="button" class="menu-burger color-green d-flex flex-column justify-content-center align-items-center">
+                <span></span>
+                <span class="my-1"></span>
+                <span></span>
+            </button>
+            <div class="header__adrees">
+                <a href="tel:+79111825503">+7 (911) 182-55-03</a>
+                <div>ПН-ПТ 10:00-22:00</div>
+            </div>
+        </div>
+    </header>
+
+   <main>
+    <section class="hero h-25" >
+        <div class="container">
+            <div>
+                <h1 class="hero__title">Блог</h1>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <input type="text" class="blog-serch mb-5" placeholder="Поиск по разделам">
+        </div>
+    </section>
+    
+    <section class="schedule" id="section5">
+        <div class="container">
+
+            <h2>Расписание</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="schedule__list mb-md-5">
+                        <li class="schedule__item-title">Понедельник:</li>
+                        <li class="schedule__item-text"><span>15:10-16:40</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>16:50-18:20</span> - 8 и 9 классы</li>
+                    </ul>
+                    <ul class="schedule__list">
+                        <li class="schedule__item-title">Четверг:</li>
+                        <li class="schedule__item-text"><span>15:10-16:40</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>16:50-18:20</span>- 10 и 11 классы</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="schedule__list mb-md-5">
+                        <li class="schedule__item-title">Пятница:</li>
+                        <li class="schedule__item-text"><span>15:10-16:40</span> - 5 и 6 классы <span class="badge text-bg-dark">ведется набор</span></li>
+                        <li class="schedule__item-text"><span>16:50-18:20</span> - 7 и 8 классы <span class="badge text-bg-dark">ведется набор</span></li>
+                    </ul>
+                    <ul class="schedule__list">
+                        <li class="schedule__item-title">Суббота:</li>
+                        <li class="schedule__item-text"><span>12:00-13:30</span> - дети 4-6 лет</li>
+                        <li class="schedule__item-text"><span>13:40-15:10</span> - индивидуальные занятия</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="section6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Контакты</h2>
+                    <ul class="contact__list-1">
+                        <li>
+                            <a href="tel:+79111825503">+7 (911) 182-55-03</a>
+                        </li>
+                        <li>
+                            <span>Санкт-Петербург, ул. Маяковского 37В</span>
+                        </li>
+                        <li>
+                            <span>Ежедневно с 10.00 до 19.00</span>
+                        </li>
+                    </ul>
+                    <ul class="contact__list-2">
+                        <li>
+                            <a href="https://vk.com/robotohod">
+                                <img src="./images/vk.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=D5Mx4vKE12M&ab_channel=%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%D0%A0%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B8">
+                                <img src="./images/youtube.png" alt="">
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://robotohod.com/">   
+                                <img src="./images/robo.png" alt="">
+
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-center mb-5">
+                        <button type="button" class="contact__btn btn-hover btn-hover btn-js">Обратный звонок</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_mayakovskogo_37v/Z0kYdQJmTUUHQFtjfXV1cHtqbQ==/?ll=30.356400%2C59.941799&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Маяковского, 37В — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.356400%2C59.941799&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjIyNDc1MTI5ElTQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDRg9C70LjRhtCwINCc0LDRj9C60L7QstGB0LrQvtCz0L4sIDM30JIiCg3m2fJBFWjEb0I%2C&z=17" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+</main>
+
+    <div id="myModal" class="modal fade z999" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content modal-fb ">
+                <div class="p-2 mw-50">
+                    <h3>ЗАПИСЬ НА Пробный УРОК</h3>
+                    <form action="">
+                        <!-- Basic Input -->
+                        <select class="form-select" aria-label="Пример выбора по умолчанию">
+                            <option selected>Выбрать адрес</option>
+                            <option value="1">Санкт-Петербург, ул. Маяковского 37В</option>
+                            <option value="2">Санкт-Петербург, ул. Маяковского 37В</option>
+                        </select>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Номер телефона">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#myModal-2" >Отправить заявку</button>
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Отмена</button>
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="myModal-2" class="modal fade z999" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content modal-fb ">
+                <div class="w-100 p-2 d-flex justify-content-end">
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="text-white h1 p-5 text-center">
+                    Спасибо заявка отправлена
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <div class="text-center">
+                    <a href="index.html">
+
+                        <img src="./images/logo-footer.png" alt="">
+                    </a>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#section1">О нас</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section2">Преподаватели</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section3">Цены</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section4">Отзывы</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section5">Расписание</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section6">Контакты</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section7">Блог</a></li>
+                </ul>
+                <div class="mb-57">
+                    <button class="btn-hover btn-js">Пробное занятие</button>
+                </div>
+            </div>
+            <ul class="footer__list-2 d-md-flex justify-content-center">
+                <li class="footer__item-2 me-md-5">
+                    <a href="polytica.html">Политика конфиденциальности</a>
+                </li>
+                <li class="footer__item-2">
+                    © 2023 Роботоход
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+
+    </script>
+
+</body>
+</html>

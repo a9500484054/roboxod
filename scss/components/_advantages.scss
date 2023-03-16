@@ -22,6 +22,7 @@
     &__wrapp {
     }
     &__card {
+        margin: 0;
         margin-bottom: 61px;
         max-width: 738px;
         position: relative;
@@ -143,8 +144,14 @@
         }
         &__card-wrap {
             display: flex;
+            justify-content: space-between;
+            &-1 {
+                margin-left: 20px;
+            }
         }
+        
         &__card {
+
             margin-bottom: 115px;
             max-width: 738px;
             position: relative;
@@ -154,12 +161,26 @@
             padding-bottom: 60px;
     
             border-radius: 20px;
+            &-item {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+            }
+            &-title {
+                margin-bottom: 32px;
+                max-width: 430px;
+                font-size: 28px;
+                line-height: 34px;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+            }
             &::after {
                 content: "";
     
                 position: absolute;
                 top: -11px;
-                right: 15px;
+                right: 68px;
             
     
                 display: block;
@@ -194,8 +215,8 @@
                 }
                 &::before {
                     background-image: url("./images/number-2.png");
-                    top: 411px;
-                    left: 15px;
+                    top: 515px;
+                    left: 8px;
                 }
             }
             &:nth-child(2) {
@@ -203,21 +224,32 @@
                 background: linear-gradient(90deg, #3BB392 0%, #39C977 100%);
                 &::after {
                     background-image: url("./images/item-2-dest.png");
+                    background-size: cover;
+                    width: 170px;
+                    height: 148px;
+                    top: -60px;
+                    right: 68px;
                 }
                 &::before {
                     background-image: url("./images/number-1.png");
-                    top: -506px;
-                    right: 15px;
+                    top: -521px;
+                    right: -120px;
                 }
 
             }
             &:nth-child(3) {
                 background: linear-gradient(90deg, #E13DB4 0%, #FF908D 100%);
                 &::after {
-                    background-image: url("./images/item-3-dest.png");
+                    background-image: url('./images/item-3-dest.png');
+                    background-size: cover;
+                    width: 198px;
+                    height: 173px;
+                    top: -81px;
+                    right: 60px;
                 }
             }
         }
+
         
     }
     

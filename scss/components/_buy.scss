@@ -1,6 +1,9 @@
 .buy {
     padding-top: 50px;
     padding-bottom: 100px;
+    &__slider {
+        padding-bottom: 40px;
+    }
     h2{
         margin-bottom: 37px;
         font-size: 24px;
@@ -12,8 +15,28 @@
     }
     .price__card {
         border-radius: 20px;
-        min-height: 665px;
+        // min-height: 665px;
+        padding-bottom: 43px;
         overflow: hidden;
+        h3 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+            
+            text-transform: uppercase;
+            
+            color: #FFFFFF;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
 
     }
 }
@@ -35,5 +58,30 @@
     
             color: #000000;
         }
-    }
+        .price__card {
+            border-radius: 20px;
+            // min-height: 665px;
+            overflow: hidden;
+            h3 {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                /* identical to box height */
+                
+                text-transform: uppercase;
+                
+                color: #000;
+            }
+    
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+    
+                color: #000;
+            }
+    
+        } 
+    } 
 }

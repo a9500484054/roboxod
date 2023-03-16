@@ -34,7 +34,7 @@
                     <li class="menu__item"><a class="menu__link btn-hover" href="#section4">Отзывы</a></li>
                     <li class="menu__item"><a class="menu__link btn-hover" href="#section5">Расписание</a></li>
                     <li class="menu__item"><a class="menu__link btn-hover" href="#section6">Контакты</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section7">Блог</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="blog.html">Блог</a></li>
                 </ul>
                 <div class="menu__adrees">
                     <a href="tel:+79111825503">+7 (911) 182-55-03</a>
@@ -62,7 +62,7 @@
             <button type="button" class="hero__btn btn-hover btn-js">Записаться на пробное занятие</button>
         </div>
     </section>
-
+    
     <section class="advantages" >
         <div class="container">
             <h2 class="advantages__title">Чем полезны уроки робототехники</h2>
@@ -70,7 +70,7 @@
 
             <div class="advantages__wrapp">
 
-                <div class="advantages__card card-animate">
+                <div class="advantages__card">
                     <h3 class="advantages__card-title">УЧЕНИК развивает в себе:</h3>
                     <div class="advantages__card-wrap">
                         <ul class="advantages__card-list">
@@ -81,7 +81,7 @@
                             <li class="advantages__card-item">Речь и умственные способности</li>
                             <li class="advantages__card-item">Внимательность</li>
                         </ul>
-                        <ul>        
+                        <ul class="advantages__card-wrap-1">        
                             <li class="advantages__card-item">Терпеливость</li>
                             <li class="advantages__card-item">Целеустремленность</li>
                             <li class="advantages__card-item">Усидчивость</li>
@@ -91,29 +91,37 @@
                     </div>
                 </div>
 
-                <div class="advantages__card card-animate">
+                <div class="advantages__card">
                     <h3 class="advantages__card-title">Обучается важным навыкам:</h3>
-                    <ul class="advantages__card-list number-3">
-                        <li class="advantages__card-item">Работать в команде</li>
-                        <li class="advantages__card-item">Поэтапно действовать от простого к сложному</li>
-                        <li class="advantages__card-item">Самостоятельно принимать решения</li>
-                        <li class="advantages__card-item">Уважать чужой труд</li>
-                        <li class="advantages__card-item">Доводить начатое дело до логического завершения</li>
-                        <li class="advantages__card-item">Эффективно общаться с педагогами и сверстниками</li>
-                    </ul>
+                    <div class="advantages__card-wrap">
+                        <ul class="advantages__card-list number-3">
+                            <li class="advantages__card-item">Работать в команде</li>
+                            <li class="advantages__card-item">Поэтапно действовать от простого к сложному</li>
+                            <li class="advantages__card-item">Самостоятельно принимать решения</li>
+                            <li class="advantages__card-item">Уважать чужой труд</li>
+                        </ul>    
+                        <ul class="advantages__card-wrap-1">
+                            <li class="advantages__card-item">Доводить начатое дело до логического завершения</li>
+                            <li class="advantages__card-item">Эффективно общаться с педагогами и сверстниками</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="advantages__card card-animate">
+                <div class="advantages__card">
                     <h3 class="advantages__card-title">Получает современные знания:</h3>
-                    <ul class="advantages__card-list">
-                        <li class="advantages__card-item">Азы компьютерной грамотности</li>
-                        <li class="advantages__card-item">Основы математики и физики</li>
-                        <li class="advantages__card-item">Программирование и логика</li>
-                        <li class="advantages__card-item">Проектирование и конструирование</li>
-                        <li class="advantages__card-item">Многообразие окружающего мира</li>
-                        <li class="advantages__card-item">Работа с механизмами</li>
-                        <li class="advantages__card-item">Английский язык</li>
-                    </ul>
+                    <div class="advantages__card-wrap">
+                        <ul class="advantages__card-list">
+                            <li class="advantages__card-item">Азы компьютерной грамотности</li>
+                            <li class="advantages__card-item">Основы математики и физики</li>
+                            <li class="advantages__card-item">Программирование и логика</li>
+                            <li class="advantages__card-item">Проектирование и конструирование</li>
+                        </ul>
+                        <ul class="advantages__card-wrap-1">
+                            <li class="advantages__card-item">Многообразие окружающего мира</li>
+                            <li class="advantages__card-item">Работа с механизмами</li>
+                            <li class="advantages__card-item">Английский язык</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -161,8 +169,8 @@
     <section class="teachers" id="section2">
         <div class="container">
             <h2 class="teachers__title">Наши преподаватели</h2>
-            <div class="teachers__wrap row gy-4 justify-content-between">
-                <div class="col-lg-6 d-flex teachers__card p-0 card-animate">
+            <div class="teachers__wrap row gy-4 justify-content-center justify-content-lg-between">
+                <div class="col-lg-6 d-flex teachers__card p-0">
                     <picture>
                         <source srcset="./images/foto-1-dest.png" media="(min-width: 768px)">
                         <img class="" src="./images/foto-1-mob.png" alt="фото"/>
@@ -177,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex teachers__card p-0 card-animate">
+                <div class="col-lg-6 d-flex teachers__card p-0">
                     <picture>
                         <source srcset="./images/foto-2-dest.png" media="(min-width: 768px)">
                         <img class="" src="./images/foto-2-mob.png" alt="фото"/>
@@ -366,7 +374,7 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <div class="reviews__item card-animate">
+                        <div class="reviews__item">
                             <div class="">
                                 <div>
                                     <img src="./images/reviews-1.png" alt="">
@@ -380,7 +388,7 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="reviews__item card-animate">
+                        <div class="reviews__item">
                             <div class="">
                                 <div>
                                     <img src="./images/reviews-2.png" alt="">
@@ -393,7 +401,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="reviews__item card-animate">
+                        <div class="reviews__item">
                             <div class="">
                                 <div>
                                     <img src="./images/reviews-3.png" alt="">
@@ -406,7 +414,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="reviews__item card-animate">
+                        <div class="reviews__item">
                             <div class="">
                                 <div>
                                     <img src="./images/reviews-4.png" alt="">
@@ -509,7 +517,7 @@
             <div class="social__header">
                 <h2>Развивайтесь с нами в социальных сетях</h2>
                 <ul class="social__list">
-                    <li>
+                    <li class="me-2">
                         <a href="https://vk.com/robotohod">
                             <img src="./images/vk.png" alt="">
                         </a>
@@ -570,13 +578,14 @@
                     <div class="swiper-slide">
                         
                             <div class="bg-5D9BD4 price__card">
-                                <div class="price__card-img h-215 bg-white">
+                                <div class="price__card-img h-215 bg-white text-center pt-2">
                                     <img src="./images/buy-1.png" alt="">
                                 </div>
+                                
                                 <h3 class="text-center mt-4 mb-4">Lego WeDo</h3>
                                 <p class="text-center px-5">для юных гениев, которым важно познание Мира через пальчики. Яркое, интересное, поддерживающее импровизации ребенка.</p>
             
-                                <div class="d-flex align-items-center justify-content-center mb-5">
+                                <div class="d-flex align-items-center justify-content-center mb-5 mt-36">
                                     <div class="price__elem2">Цена по запросу</div>
                                 </div>
             
@@ -589,7 +598,7 @@
 
                     <div class="swiper-slide">
                         <div class="bg-E4548E price__card">
-                            <div class="price__card-img h-215 bg-white">
+                            <div class="price__card-img h-215 bg-white  text-center pt-2">
                                 <img src="./images/buy-2.png" alt="">
                             </div>
                             <h3 class="text-center mt-4 mb-4">Lego Mindstorms Education</h3>
@@ -606,13 +615,13 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="bg-8AC8A2 price__card ">
-                            <div class="price__card-img h-215 bg-white">
+                            <div class="price__card-img h-215 bg-white  text-center pt-2">
                                 <img src="./images/buy-3.png" alt="">
                             </div>
                             <h3 class="text-center mt-4 mb-4">Технолидер-1</h3>
                             <p class="text-center px-5">для гениев, которым нужен индивидуальный подход.</p>
         
-                            <div class="d-flex align-items-center justify-content-center mb-5">
+                            <div class="d-flex align-items-center justify-content-center mb-5 mt-54 mt-75 ">
                                 <div class="price__elem2">Цена по запросу</div>
                             </div>
         
@@ -678,7 +687,7 @@
     </div><!-- /.modal -->
 
 
-
+    <div class="btn-up btn-up_hide"></div>
     <footer class="footer">
         <div class="container">
             <div class="d-md-flex justify-content-between align-items-center">
@@ -695,7 +704,7 @@
                     <li class="footer__item"><a class="footer__link" href="#section4">Отзывы</a></li>
                     <li class="footer__item"><a class="footer__link" href="#section5">Расписание</a></li>
                     <li class="footer__item"><a class="footer__link" href="#section6">Контакты</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section7">Блог</a></li>
+                    <li class="footer__item"><a class="footer__link" href="blog.html">Блог</a></li>
                 </ul>
                 <div class="mb-57">
                     <button class="btn-hover btn-js">Пробное занятие</button>
@@ -716,8 +725,37 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
     <script>
-
-    </script>
+        const btnUp = {
+          el: document.querySelector('.btn-up'),
+          show() {
+            // удалим у кнопки класс btn-up_hide
+            this.el.classList.remove('btn-up_hide');
+          },
+          hide() {
+            // добавим к кнопке класс btn-up_hide
+            this.el.classList.add('btn-up_hide');
+          },
+          addEventListener() {
+            // при прокрутке содержимого страницы
+            window.addEventListener('scroll', () => {
+              // определяем величину прокрутки
+              const scrollY = window.scrollY || document.documentElement.scrollTop;
+              // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+              scrollY > 400 ? this.show() : this.hide();
+            });
+            // при нажатии на кнопку .btn-up
+            document.querySelector('.btn-up').onclick = () => {
+              // переместим в начало страницы
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+              });
+            }
+          }
+        }
+        btnUp.addEventListener();
+      </script>
 
 </body>
 </html>
