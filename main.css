@@ -1948,4 +1948,8 @@ input[type=radio].visually-hidden {
   padding: 27px;
   background: #FFFFFF;
   border-radius: 20px;
+}
+
+.btn-up {
+  z-index: 100000000000000000;
 }/*# sourceMappingURL=main.css.map */
