@@ -10,9 +10,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('click', (event) => {
         if(event.target.matches('.btn-js')) {
-            console.log('myModal');
             openModal('#myModal');
         }
+    });
+
+    document.addEventListener('click', (event) => {
+        if(event.target.matches('.btn-buy-js')) {
+            openModal('#myModalBuy');
+        }
+    });
+
+    $("form").submit(function(e) {
+        e.preventDefault();
+        let th = $(this);
+        console.log('mail')
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: th.serialize(),
+            // success: function(data) {
+            //     th.trigger("reset");
+            // }
+        });
+        return false;
     });
 
     const swiper1 = new Swiper('.reviews__slider', {

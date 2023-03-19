@@ -28,12 +28,12 @@
                     <i class="icon-close"></i>
                 </button>   
                 <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section1">О нас</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section2">Преподаватели</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section3">Цены</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section4">Отзывы</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section5">Расписание</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section6">Контакты</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section1">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section2">Преподаватели</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section3">Цены</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section4">Отзывы</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section5">Расписание</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section6">Контакты</a></li>
                     <li class="menu__item"><a class="menu__link btn-hover" href="#section7">Блог</a></li>
                 </ul>
                 <div class="menu__adrees">
@@ -154,21 +154,21 @@
             <div class="modal-content modal-fb ">
                 <div class="p-2 mw-50">
                     <h3>ЗАПИСЬ НА Пробный УРОК</h3>
-                    <form action="">
+                    <form>
                         <!-- Basic Input -->
-                        <select class="form-select" aria-label="Пример выбора по умолчанию">
+                        <select class="form-select" aria-label="Пример выбора по умолчанию" name="Адрес">
                             <option selected>Выбрать адрес</option>
-                            <option value="1">Санкт-Петербург, ул. Маяковского 37В</option>
-                            <option value="2">Санкт-Петербург, ул Кораблестроителей 16,к2</option>
+                            <option>Санкт-Петербург, ул. Маяковского 37В</option>
+                            <option>Санкт-Петербург, ул Кораблестроителей 16,к2</option>
                         </select>
                         <div>
-                            <input type="text" class="form-control" placeholder="Ваше имя">
+                            <input type="text" class="form-control" name="Имя" placeholder="Ваше имя">
                         </div>
                         <div>
-                            <input type="text" class="form-control" placeholder="Номер телефона">
+                            <input type="text" class="form-control" name="Телефон" placeholder="Номер телефона">
                         </div>
                         <div class="d-flex flex-column">
-                            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#myModal-2" >Отправить заявку</button>
+                            <button type="submit" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#myModal-2" >Отправить заявку</button>
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Отмена</button>
                         </div>
                     </form>
@@ -187,7 +187,7 @@
                     <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="text-white h1 p-5 text-center">
-                    Спасибо заявка отправлена
+                    Спасибо, заявка отправлена
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -205,12 +205,12 @@
                     </a>
                 </div>
                 <ul class="footer__list">
-                    <li class="footer__item"><a class="footer__link" href="#section1">О нас</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section2">Преподаватели</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section3">Цены</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section4">Отзывы</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section5">Расписание</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#section6">Контакты</a></li>
+                    <li class="footer__item"><a class="footer__link" href="index.html#section1">О нас</a></li>
+                    <li class="footer__item"><a class="footer__link" href="index.html#section2">Преподаватели</a></li>
+                    <li class="footer__item"><a class="footer__link" href="index.html#section3">Цены</a></li>
+                    <li class="footer__item"><a class="footer__link" href="index.html#section4">Отзывы</a></li>
+                    <li class="footer__item"><a class="footer__link" href="index.html#section5">Расписание</a></li>
+                    <li class="footer__item"><a class="footer__link" href="index.html#section6">Контакты</a></li>
                     <li class="footer__item"><a class="footer__link" href="#section7">Блог</a></li>
                 </ul>
                 <div class="mb-57">
@@ -230,6 +230,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/app.js"></script>
     <script>
 
