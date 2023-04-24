@@ -8,6 +8,27 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.menu').classList.remove('menu--active');
     });
 
+    document.querySelector('.schedule__btn-1').addEventListener('click', ()=> {
+        document.querySelectorAll('.schedule__btn').forEach(el => el.classList.remove('schedule__btn--active'));
+        document.querySelectorAll('.schedule__block').forEach(el => el.classList.add('d-none'));
+        document.querySelector('.schedule__btn-1').classList.add('schedule__btn--active');
+        document.querySelector('.schedule__block-1').classList.remove('d-none');
+    });
+
+    document.querySelector('.schedule__btn-2').addEventListener('click', ()=> {
+        document.querySelectorAll('.schedule__btn').forEach(el => el.classList.remove('schedule__btn--active'));
+        document.querySelectorAll('.schedule__block').forEach(el => el.classList.add('d-none'));
+        document.querySelector('.schedule__btn-2').classList.add('schedule__btn--active');
+        document.querySelector('.schedule__block-2').classList.remove('d-none');
+    });
+
+    document.querySelector('.schedule__btn-1').addEventListener('click', ()=> {
+        document.querySelectorAll('.schedule__btn').forEach(el => el.classList.remove('schedule__btn--active'));
+        document.querySelectorAll('.schedule__block').forEach(el => el.classList.add('d-none'));
+        document.querySelector('.schedule__btn-1').classList.add('schedule__btn--active');
+        document.querySelector('.schedule__block-1').classList.remove('d-none');
+    });
+
     document.addEventListener('click', (event) => {
         if(event.target.matches('.btn-js')) {
             console.log('myModal');

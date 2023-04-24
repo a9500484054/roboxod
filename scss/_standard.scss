@@ -220,3 +220,66 @@
   .btn-up  {
     z-index: 99999999999999999;
   }
+
+  .free-feedback {
+    background: linear-gradient(90deg, #3A8BFA 0%, #74BCF5 100%);
+    padding: 35px 0 55px;
+    h2 {
+        margin-bottom: 26px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+    }
+    &__form {
+        max-width: 550px;
+        margin: 0 auto;
+        .form-control {
+            margin-bottom: 10px;
+        }
+        .social__btn {
+            width: 100%;
+        }
+        .form-control-ta {
+            height: 104px;
+        }
+    }
+  }
+
+  @media (min-width: $screen-desktop) {
+    .free-feedback {
+        background: linear-gradient(90deg, #3A8BFA 0%, #74BCF5 100%);
+        padding: 35px 0 55px;
+        h2 {
+            max-width: 870px;
+            margin: 0 auto;
+            margin-bottom: 42px;
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 56px;
+            text-align: center;
+            text-transform: uppercase;
+            
+            color: #FFFFFF;
+        }
+        &__form {
+            max-width: 550px;
+            margin: 0 auto;
+            .form-control {
+                margin-bottom: 10px;
+            }
+            .social__btn {
+                width: 100%;
+            }
+            .form-control {
+                padding: 30px 22px;
+            }
+            .form-control-ta {
+                height: 162px;
+            }
+        }
+      }
+}
