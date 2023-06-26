@@ -28,13 +28,13 @@
                     <i class="icon-close"></i>
                 </button>   
                 <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section1">О нас</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section2">Преподаватели</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section3">Цены</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section4">Отзывы</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section5">Расписание</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section6">Контакты</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section7">Блог</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section1">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section2">Преподаватели</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section3">Цены</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section4">Отзывы</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section5">Расписание</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section6">Контакты</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section7">Блог</a></li>
                 </ul>
                 <div class="menu__adrees">
                     <a href="tel:+79111825503">+7 (911) 182-55-03</a>
@@ -71,33 +71,118 @@
     <section class="schedule" id="section5">
         <div class="container">
 
-            <h2>Расписание</h2>
-            <div class="row">
+            <h2 class="mb-3">Расписание</h2>
+            <div class="mb-3 schedule__btn-wrapper">
+                <button class="schedule__btn schedule__btn-1 schedule__btn--active"> <i class="bi bi-geo-alt"></i>Санкт-Петербург, ул. Маяковского 37В</button>
+                <button class="schedule__btn schedule__btn-2 "> <i class="bi bi-geo-alt"></i> Санкт-Петербург, ул. Кораблестроителей, 16 к2</button>
+            </div>
+
+            <div class="row schedule__block schedule__block-1">
                 <div class="col-md-6">
                     <ul class="schedule__list mb-md-5">
                         <li class="schedule__item-title">Понедельник:</li>
-                        <li class="schedule__item-text"><span>15:10-16:40</span> - 1 и 2 классы</li>
-                        <li class="schedule__item-text"><span>16:50-18:20</span> - 8 и 9 классы</li>
+                        <li class="schedule__item-text"><span>11:00-12:30</span> - младшая </li>
+                        <li class="schedule__item-text"><span>12:30-14:00</span> - 1 и 2 классы </li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия </li>
                     </ul>
-                    <ul class="schedule__list">
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Вторник:</li>
+                        <li class="schedule__item-text"><span>11:00-12.30</span> младшая</li>
+                        <li class="schedule__item-text"><span>12:30-14.00 | 15:10 - 16:40</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>13:30-15:00</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>16:50-18:20</span> - 6 и 8 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
                         <li class="schedule__item-title">Четверг:</li>
+                        <li class="schedule__item-text"><span>13:30-15:00</span> - 1 и 2 классы</li>
                         <li class="schedule__item-text"><span>15:10-16:40</span> - 3 и 4 классы</li>
-                        <li class="schedule__item-text"><span>16:50-18:20</span>- 10 и 11 классы</li>
+                        <li class="schedule__item-text"><span>13:30-15:00</span> - 4 и 6 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <ul class="schedule__list mb-md-5">
                         <li class="schedule__item-title">Пятница:</li>
-                        <li class="schedule__item-text"><span>15:10-16:40</span> - 5 и 6 классы <span class="badge text-bg-dark">ведется набор</span></li>
-                        <li class="schedule__item-text"><span>16:50-18:20</span> - 7 и 8 классы <span class="badge text-bg-dark">ведется набор</span></li>
+                        <li class="schedule__item-text"><span>13:30-15:00 | 15:10-16:40</span> - 1 и 2 классы </li>
+                        <li class="schedule__item-text"><span>16:50-18:20</span> - 6 и 8 классы </li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия </li>
                     </ul>
-                    <ul class="schedule__list">
+                    <ul class="schedule__list  mb-md-5">
                         <li class="schedule__item-title">Суббота:</li>
-                        <li class="schedule__item-text"><span>12:00-13:30</span> - дети 4-6 лет</li>
-                        <li class="schedule__item-text"><span>13:40-15:10</span> - индивидуальные занятия</li>
+                        <li class="schedule__item-text"><span>10:00-11:30 | 12:00-13:30 </span> - младшая</li>
+                        <li class="schedule__item-text"><span>15:00-16:30 </span>  - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>16:40-18:10  </span>  - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span>  - индивидуальные занятия</li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Воскресенье:</li>
+                        <li class="schedule__item-text"><span>10:00-11:30 | 12:00-13:30</span> - младшая</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>16:40-18:10</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
                     </ul>
                 </div>
             </div>
+
+            <div class="row schedule__block schedule__block-2 d-none">
+                <div class="col-md-6">
+                    <ul class="schedule__list mb-md-5">
+                        <li class="schedule__item-title">Понедельник:</li>
+                        <li class="schedule__item-text"><span>12:10-13:40 | 13:50-15:20 </span> - 1 и 2 классы </li>
+                        <li class="schedule__item-text"><span>15:30-17:00 </span>- 3 и 4 классы </li>
+                        <li class="schedule__item-text"><span>18:10-19:40 </span> - индивидуальные занятия </li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Вторник:</li>
+                        <li class="schedule__item-text"><span>12:10-13:40 | 13:50-15:20 </span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>18:00-19:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>15:30-17:00 | 19:40-21:10 </span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40 </span> - индивидуальные занятия</li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Среда:</li>
+                        <li class="schedule__item-text"><span>15:00-16:30 | 18:00-19:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>15:00-16:30 | 19:40-21:10 </span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 6 и 8 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Четверг:</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 6 и 8 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="schedule__list mb-md-5">
+                        <li class="schedule__item-title">Пятница:</li>
+                        <li class="schedule__item-text"><span>17:00-18:00</span>  - младшая/новички</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>15:00-16:30 </span> - 3 и 4 классы </li>
+                        <li class="schedule__item-text"><span>15:00-16:30 </span> - 6 и 8 классы  </li>
+                        <li class="schedule__item-text"><span>18:10-19:40 </span>  - индивидуальные занятия  </li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Суббота:</li>
+                        <li class="schedule__item-text"><span>10:00-11:30 | 12:00-13:30</span> - младшая</li>
+                        <li class="schedule__item-text"><span>14:00-15:30</span> - младшая</li>
+                        <li class="schedule__item-text"><span>14:00-15:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>16:30-18:00</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span>  - индивидуальные занятия</li>
+                        <li class="schedule__item-text" style="color: #E4548E"><span style="color: #E4548E">16:30-18:00</span> - мастер класс (бесплатный по предварительной записи)</li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Воскресенье:</li>
+                        <li class="schedule__item-text"><span>10:00-11:30 | 12:00-13:30</span> - младшая</li>
+                        <li class="schedule__item-text"><span>14:00-15:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>16:30-18:00</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
     
