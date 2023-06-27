@@ -440,7 +440,7 @@ input[type=radio].visually-hidden {
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
@@ -524,6 +524,9 @@ input[type=radio].visually-hidden {
 
 .menu--active {
   display: flex;
+  display: flex;
+  max-width: 31%;
+  right: 0 !important;
 }
 
 .menu-burger {
@@ -1416,7 +1419,7 @@ input[type=radio].visually-hidden {
   }
   .schedule h2 {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
@@ -1507,6 +1510,9 @@ input[type=radio].visually-hidden {
   background-image: url("./images/nav-icin.png");
 }
 .contact__list-1 li:nth-child(3)::after {
+  background-image: url("./images/nav-icin.png");
+}
+.contact__list-1 li:nth-child(4)::after {
   background-image: url("./images/time.png");
 }
 .contact__list-1 a, .contact__list-1 span {

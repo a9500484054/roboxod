@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+
     <header class="header">
         <div class="container d-flex justify-content-between align-items-center">
             <a href="index.html" class="hero__header-logo bg-cirgle">
@@ -26,7 +26,7 @@
             <div class="menu">
                 <button  type="button" class="menu__btn-close" >
                     <i class="icon-close"></i>
-                </button>   
+                </button>
                 <ul class="menu__list">
                     <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section1">О нас</a></li>
                     <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section2">Преподаватели</a></li>
@@ -34,7 +34,7 @@
                     <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section4">Отзывы</a></li>
                     <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section5">Расписание</a></li>
                     <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section6">Контакты</a></li>
-                    <li class="menu__item"><a class="menu__link btn-hover" href="#section7">Блог</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="index.html#section7">Блог</a></li>
                 </ul>
                 <div class="menu__adrees">
                     <a href="tel:+79111825503">+7 (911) 182-55-03</a>
@@ -61,46 +61,131 @@
             </div>
         </div>
     </section>
-    
+
     <section>
         <div class="container">
             <input type="text" class="blog-serch mb-5" placeholder="Поиск по разделам">
         </div>
     </section>
-    
+
     <section class="schedule" id="section5">
         <div class="container">
 
-            <h2>Расписание</h2>
-            <div class="row">
+            <h2 class="mb-3">Расписание</h2>
+            <div class="mb-3 schedule__btn-wrapper">
+                <button class="schedule__btn schedule__btn-1 schedule__btn--active"> <i class="bi bi-geo-alt"></i>Санкт-Петербург, ул. Маяковского 37В</button>
+                <button class="schedule__btn schedule__btn-2 "> <i class="bi bi-geo-alt"></i> Санкт-Петербург, ул. Кораблестроителей, 16 к2</button>
+            </div>
+
+            <div class="row schedule__block schedule__block-1">
                 <div class="col-md-6">
                     <ul class="schedule__list mb-md-5">
                         <li class="schedule__item-title">Понедельник:</li>
-                        <li class="schedule__item-text"><span>15:10-16:40</span> - 1 и 2 классы</li>
-                        <li class="schedule__item-text"><span>16:50-18:20</span> - 8 и 9 классы</li>
+                        <li class="schedule__item-text"><span>11:00-12:30</span> - младшая </li>
+                        <li class="schedule__item-text"><span>12:30-14:00</span> - 1 и 2 классы </li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия </li>
                     </ul>
-                    <ul class="schedule__list">
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Вторник:</li>
+                        <li class="schedule__item-text"><span>11:00-12.30</span> младшая</li>
+                        <li class="schedule__item-text"><span>12:30-14.00 | 15:10 - 16:40</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>13:30-15:00</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>16:50-18:20</span> - 6 и 8 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
                         <li class="schedule__item-title">Четверг:</li>
+                        <li class="schedule__item-text"><span>13:30-15:00</span> - 1 и 2 классы</li>
                         <li class="schedule__item-text"><span>15:10-16:40</span> - 3 и 4 классы</li>
-                        <li class="schedule__item-text"><span>16:50-18:20</span>- 10 и 11 классы</li>
+                        <li class="schedule__item-text"><span>13:30-15:00</span> - 4 и 6 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <ul class="schedule__list mb-md-5">
                         <li class="schedule__item-title">Пятница:</li>
-                        <li class="schedule__item-text"><span>15:10-16:40</span> - 5 и 6 классы <span class="badge text-bg-dark">ведется набор</span></li>
-                        <li class="schedule__item-text"><span>16:50-18:20</span> - 7 и 8 классы <span class="badge text-bg-dark">ведется набор</span></li>
+                        <li class="schedule__item-text"><span>13:30-15:00 | 15:10-16:40</span> - 1 и 2 классы </li>
+                        <li class="schedule__item-text"><span>16:50-18:20</span> - 6 и 8 классы </li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия </li>
                     </ul>
-                    <ul class="schedule__list">
+                    <ul class="schedule__list  mb-md-5">
                         <li class="schedule__item-title">Суббота:</li>
-                        <li class="schedule__item-text"><span>12:00-13:30</span> - дети 4-6 лет</li>
-                        <li class="schedule__item-text"><span>13:40-15:10</span> - индивидуальные занятия</li>
+                        <li class="schedule__item-text"><span>10:00-11:30 | 12:00-13:30 </span> - младшая</li>
+                        <li class="schedule__item-text"><span>15:00-16:30 </span>  - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>16:40-18:10  </span>  - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span>  - индивидуальные занятия</li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Воскресенье:</li>
+                        <li class="schedule__item-text"><span>10:00-11:30 | 12:00-13:30</span> - младшая</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>16:40-18:10</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
                     </ul>
                 </div>
             </div>
+
+            <div class="row schedule__block schedule__block-2 d-none">
+                <div class="col-md-6">
+                    <ul class="schedule__list mb-md-5">
+                        <li class="schedule__item-title">Понедельник:</li>
+                        <li class="schedule__item-text"><span>12:10-13:40 | 13:50-15:20 </span> - 1 и 2 классы </li>
+                        <li class="schedule__item-text"><span>15:30-17:00 </span>- 3 и 4 классы </li>
+                        <li class="schedule__item-text"><span>18:10-19:40 </span> - индивидуальные занятия </li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Вторник:</li>
+                        <li class="schedule__item-text"><span>12:10-13:40 | 13:50-15:20 </span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>18:00-19:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>15:30-17:00 | 19:40-21:10 </span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40 </span> - индивидуальные занятия</li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Среда:</li>
+                        <li class="schedule__item-text"><span>15:00-16:30 | 18:00-19:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>15:00-16:30 | 19:40-21:10 </span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 6 и 8 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Четверг:</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 6 и 8 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="schedule__list mb-md-5">
+                        <li class="schedule__item-title">Пятница:</li>
+                        <li class="schedule__item-text"><span>17:00-18:00</span>  - младшая/новички</li>
+                        <li class="schedule__item-text"><span>15:00-16:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>15:00-16:30 </span> - 3 и 4 классы </li>
+                        <li class="schedule__item-text"><span>15:00-16:30 </span> - 6 и 8 классы  </li>
+                        <li class="schedule__item-text"><span>18:10-19:40 </span>  - индивидуальные занятия  </li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Суббота:</li>
+                        <li class="schedule__item-text"><span>10:00-11:30 | 12:00-13:30</span> - младшая</li>
+                        <li class="schedule__item-text"><span>14:00-15:30</span> - младшая</li>
+                        <li class="schedule__item-text"><span>14:00-15:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>16:30-18:00</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span>  - индивидуальные занятия</li>
+                        <li class="schedule__item-text" style="color: #E4548E"><span style="color: #E4548E">16:30-18:00</span> - мастер класс (бесплатный по предварительной записи)</li>
+                    </ul>
+                    <ul class="schedule__list  mb-md-5">
+                        <li class="schedule__item-title">Воскресенье:</li>
+                        <li class="schedule__item-text"><span>10:00-11:30 | 12:00-13:30</span> - младшая</li>
+                        <li class="schedule__item-text"><span>14:00-15:30</span> - 1 и 2 классы</li>
+                        <li class="schedule__item-text"><span>16:30-18:00</span> - 3 и 4 классы</li>
+                        <li class="schedule__item-text"><span>18:10-19:40</span> - индивидуальные занятия</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
-    
+
     <section class="contact" id="section6">
         <div class="container">
             <div class="row">
@@ -112,6 +197,9 @@
                         </li>
                         <li>
                             <span>Санкт-Петербург, ул. Маяковского 37В</span>
+                        </li>
+                        <li>
+                            <span>Санкт-Петербург, ул. Кораблестроителей, 16 к2</span>
                         </li>
                         <li>
                             <span>Ежедневно с 10.00 до 19.00</span>
@@ -126,13 +214,22 @@
                         <li>
                             <a href="https://www.youtube.com/watch?v=D5Mx4vKE12M&ab_channel=%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%D0%A0%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B8">
                                 <img src="./images/youtube.png" alt="">
-                                
+
                             </a>
                         </li>
                         <li>
-                            <a href="https://robotohod.com/">   
+                            <a href="https://t.me/s/robotohod">
+                                <img src="./images/telegram.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://rutube.ru/channel/30231437/">
+                                <img src="./images/rutube.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://robotohod.com/">
                                 <img src="./images/robo.png" alt="">
-
                             </a>
                         </li>
                     </ul>
@@ -141,11 +238,12 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_mayakovskogo_37v/Z0kYdQJmTUUHQFtjfXV1cHtqbQ==/?ll=30.356400%2C59.941799&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Маяковского, 37В — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.356400%2C59.941799&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjIyNDc1MTI5ElTQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDRg9C70LjRhtCwINCc0LDRj9C60L7QstGB0LrQvtCz0L4sIDM30JIiCg3m2fJBFWjEb0I%2C&z=17" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_mayakovskogo_37v/Z0kYdQJmTUUHQFtjfXV1cHtqbQ==/?ll=30.356400%2C59.941799&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Маяковского, 37В — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.356400%2C59.941799&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjIyNDc1MTI5ElTQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDRg9C70LjRhtCwINCc0LDRj9C60L7QstGB0LrQvtCz0L4sIDM30JIiCg3m2fJBFWjEb0I%2C&z=17" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af32abd9a46ee973087b05bc4e64ebb7fbbdef05daf8dd1b9cd98d8c38f842160&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
 </main>
 
@@ -154,21 +252,21 @@
             <div class="modal-content modal-fb ">
                 <div class="p-2 mw-50">
                     <h3>ЗАПИСЬ НА Пробный УРОК</h3>
-                    <form>
+                    <form action="">
                         <!-- Basic Input -->
-                        <select class="form-select" aria-label="Пример выбора по умолчанию" name="Адрес">
+                        <select class="form-select" aria-label="Пример выбора по умолчанию">
                             <option selected>Выбрать адрес</option>
-                            <option>Санкт-Петербург, ул. Маяковского 37В</option>
-                            <option>Санкт-Петербург, ул Кораблестроителей 16,к2</option>
+                            <option value="1">Санкт-Петербург, ул. Маяковского 37В</option>
+                            <option value="2">Санкт-Петербург, ул Кораблестроителей 16,к2</option>
                         </select>
                         <div>
-                            <input type="text" class="form-control" name="Имя" placeholder="Ваше имя">
+                            <input type="text" class="form-control" placeholder="Ваше имя">
                         </div>
                         <div>
-                            <input type="text" class="form-control" name="Телефон" placeholder="Номер телефона">
+                            <input type="text" class="form-control" placeholder="Номер телефона">
                         </div>
                         <div class="d-flex flex-column">
-                            <button type="submit" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#myModal-2" >Отправить заявку</button>
+                            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#myModal-2" >Отправить заявку</button>
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Отмена</button>
                         </div>
                     </form>
@@ -187,7 +285,7 @@
                     <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="text-white h1 p-5 text-center">
-                    Спасибо, заявка отправлена
+                    Спасибо заявка отправлена
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -205,12 +303,12 @@
                     </a>
                 </div>
                 <ul class="footer__list">
-                    <li class="footer__item"><a class="footer__link" href="index.html#section1">О нас</a></li>
-                    <li class="footer__item"><a class="footer__link" href="index.html#section2">Преподаватели</a></li>
-                    <li class="footer__item"><a class="footer__link" href="index.html#section3">Цены</a></li>
-                    <li class="footer__item"><a class="footer__link" href="index.html#section4">Отзывы</a></li>
-                    <li class="footer__item"><a class="footer__link" href="index.html#section5">Расписание</a></li>
-                    <li class="footer__item"><a class="footer__link" href="index.html#section6">Контакты</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section1">О нас</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section2">Преподаватели</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section3">Цены</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section4">Отзывы</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section5">Расписание</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#section6">Контакты</a></li>
                     <li class="footer__item"><a class="footer__link" href="#section7">Блог</a></li>
                 </ul>
                 <div class="mb-57">
@@ -227,10 +325,9 @@
             </ul>
         </div>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/app.js"></script>
     <script>
 
