@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const input = document.querySelectorAll(".online_phone");
+    for (const inputKey of input) {
+        inputKey.addEventListener("input", mask, false);
+    }
+
+
     document.querySelector('.menu-burger').addEventListener('click', ()=> {
         document.querySelector('.menu').classList.add('menu--active');
     });
@@ -140,3 +146,47 @@ async function openModal(selector) {
     modal.show();
 }
 
+function checkform(form) {
+    // get all the inputs within the submitted form
+    const inputs = form.getElementsByTagName('input');
+    for (const i = 0; i < inputs.length; i++) {
+        // only validate the inputs that have the required attribute
+        if(inputs[i].hasAttribute("required")){
+            if(inputs[i].value === ""){
+                // found an empty field that is required
+                alert("Please fill all required fields");
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+
+function setCursorPosition(pos, e) {
+    e.focus();
+    if (e.setSelectionRange) e.setSelectionRange(pos, pos);
+    else if (e.createTextRange) {
+        var range = e.createTextRange();
+        range.collapse(true);
+        range.moveEnd("character", pos);
+        range.moveStart("character", pos);
+        range.select()
+    }
+}
+
+function mask(e) {
+    //console.log('mask',e);
+    var matrix = this.placeholder,// .defaultValue
+        i = 0,
+        def = matrix.replace(/\D/g, ""),
+        val = this.value.replace(/\D/g, "");
+    def.length >= val.length && (val = def);
+    matrix = matrix.replace(/[_\d]/g, function(a) {
+        return val.charAt(i++) || "_"
+    });
+    this.value = matrix;
+    i = matrix.lastIndexOf(val.substr(-1));
+    i < matrix.length && matrix !== this.placeholder ? i++ : i = matrix.indexOf("_");
+    setCursorPosition(i, this)
+}
