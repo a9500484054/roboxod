@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     $("form").submit(function(e) {
         e.preventDefault();
         let th = $(this);
-        console.log('mail')
         $.ajax({
             type: "POST",
             url: "mail.php",
@@ -149,7 +148,7 @@ async function openModal(selector) {
 function checkform(form) {
     // get all the inputs within the submitted form
     const inputs = form.getElementsByTagName('input');
-    for (const i = 0; i < inputs.length; i++) {
+    for (let i = 0; i < inputs.length; i++) {
         // only validate the inputs that have the required attribute
         if(inputs[i].hasAttribute("required")){
             if(inputs[i].value === ""){
